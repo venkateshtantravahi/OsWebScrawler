@@ -36,7 +36,7 @@ Secure Password Handling: Leverages `Flask-Bcrypt` for hashing user passwords.
 ```
 git clone https://github.com/venkateshtantravahi/OsWebScrawler.git
 
-cd multi-threaded-web-crawler
+cd OsWebScrawler
 ```
 
 #### 2. Set Up a Virtual Environment
