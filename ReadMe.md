@@ -34,7 +34,7 @@ Secure Password Handling: Leverages `Flask-Bcrypt` for hashing user passwords.
 ### Steps
 #### 1. Clone the Repository
 ```
-git clone https://github.com/your-repository/multi-threaded-web-crawler.git
+git clone https://github.com/venkateshtantravahi/OsWebScrawler.git
 
 cd multi-threaded-web-crawler
 ```
