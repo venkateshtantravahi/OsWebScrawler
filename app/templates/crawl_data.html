@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Crawler Control Panel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/crawl.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css">
+    <script src="{{ url_for('static', filename='assets/js/script.js') }}"></script>
+</head>
+<body>
+    <nav>
+        <!-- Add any other navigation buttons here -->
+        <ul class="nav d-grid gap-3 d-sm-flex justify-content-end">
+            <li class="nav-item">
+                <br/>
+                <a href="/logout"   type="button" class="btn btn-primary btn-lg px-4 gap-4">Logout</a>
+            </li>
+            <li class="nav-item">
+                <br/>
+                <a href="/download-my-data" type="button" class="btn btn-primary btn-lg px-3 gap-3">Download Data</a>
+                <!-- <button class="btn btn-primary" id="download-data">Download Data</button> -->
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <!-- <div class="px-4 py-5 my-5 text-center">
+            <div class="search">
+                <form id="enqueue-form">
+                    <i class="fa fa-search"></i>
+                    <input type="text" id="url" name="search" class="form-control" placeholder="Enter URL" required>
+                    <input type="number" id="priority" name="priority" placeholder="Priority (default 0)">
+                    <button class="btn btn-primary" type="submit">Scrape URL</button>
+                </form>
+                <button id="start-crawl" type="submit">Start Crawl</button>
+                <button id="stop-crawl" class="btn btn-primary" type="submit">Stop Crawl</button>
+            </div>
+        </div> -->
+        <div class="container px-4 py-5 my-5">
+            <div class="row height d-flex justify-content-center align-items-center">
+
+                <div class="col-md-8">
+
+                    <div class="search">
+                        <form id="enqueue-form">
+                            <i class="fa fa-search"></i>
+                            <input type="text" id="url" name="search" class="form-control" placeholder="Enter a URL" required>
+                            <button class="btn btn-primary" type="submit">Scrape URL</button>
+                        </form>
+                    </div>
+                
+                </div>
+                <br/>
+                <button id="stop-crawl" class="btn btn-primary" type="submit">Stop Crawl</button>
+            </div>
+            
+        </div>
+        
+    </main>
+</body>
+</html>
